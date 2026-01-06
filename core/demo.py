@@ -4,7 +4,7 @@ from lxt.models.qwen2 import Qwen2ForCausalLM, attnlrp
 from transformers import Qwen2Config
 from lxt.utils import pdf_heatmap, clean_tokens
 
-path = "/mnt/data/hhc/Qwen2.5-Coder-0.5B"
+path = "/mnt/data/  /Qwen2.5-Coder-0.5B"
 
 # 加载配置并设置参数
 config = Qwen2Config.from_pretrained(path)

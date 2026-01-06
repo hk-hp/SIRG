@@ -40,8 +40,8 @@ def calculate_metrics(TN, TP, FN, FP):
 
 
 if __name__ == '__main__':
-    input_file = "/Users/tom/PycharmProjects/lrp-analysis/data/databricks-dolly-15k_judged_2.jsonl"
-    output_file = "/Users/tom/PycharmProjects/lrp-analysis/data/databricks-dolly-15k_judged_ablation_2.jsonl"
+    input_file = "/Users/  PycharmProjects/lrp-analysis/data/databricks-dolly-15k_judged_2.jsonl"
+    output_file = "/Users/  PycharmProjects/lrp-analysis/data/databricks-dolly-15k_judged_ablation_2.jsonl"
     TN, TP, FN, FP = 0, 0, 0, 0
     already_judged = {}
     if os.path.exists(output_file):

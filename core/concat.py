@@ -1,12 +1,12 @@
 import jsonlines
 
 input_files=[
-    "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_output.jsonl",
-    "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_output2.jsonl",
-    "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_output3.jsonl",
-    "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_output4.jsonl"]
+    "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_output.jsonl",
+    "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_output2.jsonl",
+    "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_output3.jsonl",
+    "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_output4.jsonl"]
 
-output_file = "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_concat.jsonl"
+output_file = "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_concat.jsonl"
 
 contexts=set()
 with jsonlines.open(output_file,'w') as writer:

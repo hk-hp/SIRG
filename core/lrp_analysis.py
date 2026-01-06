@@ -4,7 +4,7 @@ import torch
 
 from utils import generate
 
-path = "/mnt/data/hhc/Qwen2.5-3B"
+path = "/mnt/data/  /Qwen2.5-3B"
 tokenizer = AutoTokenizer.from_pretrained(path)
 
 find_relevant_context_prompt=lambda context,question:f"""
@@ -88,8 +88,8 @@ def llm_judge_most_relevant_context(source_context,question):
     return generate(find_relevant_context_prompt(source_context,question))
 
 def main1():
-    input_file = "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_output.jsonl"
-    output_file = "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_short_context_lrp.jsonl"
+    input_file = "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_output.jsonl"
+    output_file = "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_short_context_lrp.jsonl"
     with jsonlines.open(input_file) as reader, jsonlines.open(output_file, 'w') as writer:
         for record in reader:
             relevant_scores = record["relevance_scores"]
@@ -109,8 +109,8 @@ def main1():
             # break
 
 def main2():
-    input_file = "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_short_context_lrp.jsonl"
-    output_file = "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_short_context_llm.jsonl"
+    input_file = "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_short_context_lrp.jsonl"
+    output_file = "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_short_context_llm.jsonl"
     with jsonlines.open(input_file) as reader, jsonlines.open(output_file, 'w') as writer:
         for record in reader:
             question = record["instruction"]
@@ -131,9 +131,9 @@ def main2():
             # break
 
 def main3():
-    reference_file = "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_short_context_llm.jsonl"
-    input_file = "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_short_context_lrp_k20.jsonl"
-    output_file = "/mnt/data/hhc/lrp4rag/data/databricks-dolly-15k_short_context_llm_k20.jsonl"
+    reference_file = "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_short_context_llm.jsonl"
+    input_file = "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_short_context_lrp_k20.jsonl"
+    output_file = "/mnt/data/  /lrp4rag/data/databricks-dolly-15k_short_context_llm_k20.jsonl"
     llm_contexts={}
     with jsonlines.open(reference_file) as reference_reader:
         for record in reference_reader:

@@ -6,8 +6,8 @@ import json
 from openai import OpenAI
 import re
 
-api_base = "https://api.chatfire.cn/v1"
-api_key = "sk-T5YWsJ8Z3ENuyHjjMBHSietSyIQHA9o5SX64TlNtFWPK6nww"
+api_base = ""
+api_key = ""
 
 client = OpenAI(
     api_key=api_key,
