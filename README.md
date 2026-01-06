@@ -2,7 +2,7 @@
 
 ## Introduction
 This paper proposes a method to construct semantic-level internal reasoning graph of LLMs and uses it for faithfulness hallucination detection.
-
+AlignScore-main is a public library accessible via  https://github.com/yuh-zha/AlignScore .
 #### Our Approach
 ![image](framework.png)
 
